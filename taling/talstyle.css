@@ -1,0 +1,112 @@
+.cate_head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    gap: 2px 1px;
+    grid-template-areas: "cate1 cate2 cate3 cate4 cate5 cate6 cate7 cate8 cate9";
+    
+    width:1125px;
+    background-color:#f0f0f0;
+    margin: 50px auto 0px auto;
+    text-align: center;
+}
+  
+.cate1 { 
+    grid-area: cate1; 
+    margin: auto;
+    font-weight: bold;
+}
+  
+.cate2 { 
+    grid-area: cate2; 
+    margin: auto;
+    font-weight: bold;
+}
+  
+.cate3 { 
+    grid-area: cate3; 
+    margin: auto;
+    font-weight: bold;
+}
+  
+.cate4 { 
+    grid-area: cate4; 
+    margin: auto;
+    font-weight: bold;
+}
+  
+.cate5 { 
+    grid-area: cate5; 
+    margin: auto;
+    font-weight: bold;
+}
+  
+.cate6 { 
+    grid-area: cate6; 
+    margin: auto;
+    font-weight: bold;
+}
+  
+.cate7 { 
+    grid-area: cate7; 
+    margin: auto;
+    font-weight: bold;
+}
+  
+.cate8 { 
+    grid-area: cate8; 
+    margin: auto;
+    font-weight: bold;
+}
+  
+.cate9 { 
+    grid-area: cate9; 
+    margin: auto;
+    font-weight: bold;
+}
+
+.cate_contents {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50px 130px 130px 130px;
+    gap: 1px 1px;
+    grid-template-areas: "sub_head reco_head reco_head" "sub_cate reco_main reco_sub1" "sub_cate reco_main reco_sub2" "sub_cate reco_main reco_sub3";
+
+    width: 1050px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+  
+.sub_head { grid-area: sub_head; }
+
+.reco_head { grid-area: reco_head; }
+
+.sub_cate { 
+    grid-area: sub_cate; 
+
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width:90%;
+    padding-top: 15px;
+}
+
+.reco_main { 
+    grid-area: reco_main; 
+    border: 1px solid #ccc;
+}
+
+.reco_sub1 { 
+    grid-area: reco_sub1; 
+    border: 1px solid #ccc;
+}
+
+.reco_sub2 { 
+    grid-area: reco_sub2; 
+    border: 1px solid #ccc;
+}
+
+.reco_sub3 { 
+    grid-area: reco_sub3; 
+    border: 1px solid #ccc;
+}
