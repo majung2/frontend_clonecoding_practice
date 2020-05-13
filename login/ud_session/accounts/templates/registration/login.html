@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'accounts/css/style.css' %}">
+</head>
+<body>
+    <h1>로그인</h1>
+    <form method = 'POST'>
+        {% csrf_token %}
+        <p> 
+        <input type="text" name="username" autofocus="" required="" id="id_username" 
+        class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </p>
+        <p>
+            <input type="password" name="password" required="" id="id_password" 
+            class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+        </p>
+        <button type="submit">Login</button><br><br>
+    </form>
+    <b>새로 계정을 만드시겠습니까?</b><br><br>
+    <a href="{% url 'register' %}">회원가입</a> 
+</body>
+</html>
